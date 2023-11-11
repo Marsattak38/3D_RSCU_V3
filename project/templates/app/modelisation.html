@@ -1,0 +1,39 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/app/stylesM.css' %}">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Didact+Gothic&family=Silkscreen:wght@700&display=swap');
+        </style>
+    <title>Modeling</title>
+</head>
+<body>
+    <div class="header_container">
+        <div class="title">
+            <h1>3D RSCU</h1>
+            <h1>Modelisation</h1>
+        </div>
+        
+    </div>
+
+
+
+  <div class ="container_img_text">
+    <p>Please give us a file who contains the dimensions of your part, Like --></p>
+    <img class="modeling_image" src="{% static 'images/dessin-technique.png' %}" alt="icone">
+  </div>
+
+    <form action="" method="post">
+        {% csrf_token %}
+        <input type="file" name="file" id="file">
+        <div class="submit_buttom">
+            <button class="custom-button" type="submit"><a href="https://buy.stripe.com/test_3cs15p4tT83p2C4dQS">Upload and pay</a></button>
+        </div>
+    </form>
+
+</body>
+</html>

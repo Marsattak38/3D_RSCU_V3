@@ -1,0 +1,51 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/app/styles.css'%}">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Didact+Gothic&family=Silkscreen:wght@700&display=swap');
+        </style>
+        
+    <title>3D RSCU</title>
+</head>
+<body>
+
+
+
+    <div class="intro-section">
+
+        <h1 id="site-name" class="hidden">3D RSCU</h1>
+        <p id="tagline" class="hidden">Make your Ideas become reality</p>
+        <div id="scroll-down" class="hidden">&#9660;</div>
+       
+
+    </div>
+
+    <div class="new-view">
+        <div class="printing">
+            <div class="text_3D_printing" id="printing-text">
+                <p>Craft your custom parts by selecting your preferred filament and color.</p>
+            </div>
+            <div class="bouton">
+                <a href="/printing"><button class="custom-button">3D Printing</button></a>
+            </div>
+        </div>
+    
+        <div class="modeling">
+            <div class="text_3D_modeling" id="modeling-text">
+                <p>Design your unique models with the freedom to choose your preferred materials and colors.</p>
+            </div>
+            <div class="bouton">
+                <a href="/modelisation"><button class="custom-button">3D Modeling</button></a>
+            </div>
+        </div>
+        
+    </div>
+    
+    
+   
+    <script src="{% static 'js/app/script.js'%}"></script>
+</body>
+</html>
