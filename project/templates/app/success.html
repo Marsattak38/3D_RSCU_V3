@@ -1,12 +1,19 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="{% static 'stylesS.css'}">
+    <link rel="stylesheet" href="{% static 'css/app/stylesS.css' %}">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Didact+Gothic&family=Silkscreen:wght@700&display=swap');
+        </style>
 </head>
 <body>
+    <h1>Congratulations, your Upload has suceed</h1>
+
+    <p>Now Procced to pay--></p>
     <button><a href="https://buy.stripe.com/test_3cs15p4tT83p2C4dQS">Pay</a></button>
 </body>
 </html>

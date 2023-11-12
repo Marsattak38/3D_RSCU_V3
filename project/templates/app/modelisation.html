@@ -17,6 +17,9 @@
             <h1>3D RSCU</h1>
             <h1>Modelisation</h1>
         </div>
+        <div class="back-button">
+            <button class="custom-button">Go Back</button>
+        </div>
         
     </div>
 
@@ -24,17 +27,29 @@
 
   <div class ="container_img_text">
     <p>Please give us a file who contains the dimensions of your part, Like --></p>
-    <img class="modeling_image" src="{% static 'images/dessin-technique.png' %}" alt="icone">
+    <img class="modeling_image" src="{% static 'images/dessTech.png' %}" alt="icone">
   </div>
 
-    <form action="" method="post" enctype="multipart/form-data">
-        {% csrf_token %}
-        <input type="text" name="nom" id="nom">
-        <input type="file" name="fichier" id="fichier">
-        <div class="submit_buttom">
-            <button class="custom-button" type="submit">Upload</button>
-        </div>
-    </form>
+  
+
+
+  <form action="" method="post" enctype="multipart/form-data" class="custom-form">
+    {% csrf_token %}
+    <div class="form-group">
+        <label for="nom">Nom:</label>
+        <input type="text" name="nom" id="nom" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="fichier"></label>
+        <input type="file" name="fichier" id="fichier" class="form-control">
+    </div>
+    <div class="form-group">
+        <button class="custom-button" type="submit">Upload</button>
+    </div>
+</form>
+
+
+    <script src="{% static 'js/app/scriptM.js'%}"></script>
 
 </body>
 </html>

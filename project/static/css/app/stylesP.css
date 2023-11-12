@@ -4,7 +4,7 @@ body {
     padding: 0;
     background-color: #000;
     font-family: 'Didact Gothic', sans-serif;
-    color: rgb(2, 254, 254);
+    color:white;
     background-size: 40px 40px;
     background-image:
     linear-gradient(to right, rgba(2, 254, 254, 0.2) 1px, transparent 1px),
@@ -21,6 +21,31 @@ body {
         
     }
 }
+
+p{
+    color:rgb(2, 254, 254);
+     
+}
+
+.custom-form {
+    max-width: 400px; 
+    margin: auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid rgb(2, 254, 254); 
+    border-radius: 4px;
+}
+
 
 
 .header_container {
@@ -56,25 +81,36 @@ body {
   }
   
   
+ .PLA_1, .PLA_2, .PLA_3{
+    transform: translateX(-100%);
+ }
+
+ .PETG_1, .PETG_2, .PETG_3{
+    transform: translateX(100%);
+ }
+
+
   .PLA_1, .PETG_1, .PLA_2, .PETG_2,.PLA_3, .PETG_3 {
       width: 48%;
       padding: 40px;
       box-sizing: border-box;
-  
+      opacity: 0;
+      transition: transform 1s ease, opacity 1s ease;
+      
   
   }
   
   
   
-  .custom-button_pay {
-      background-color: rgb(2, 254, 254);
-      border: none;
-      padding: 10px 20px;
-      font-size: 20px;
-      cursor: pointer;
-      border-radius: 30px;
-      margin-bottom: 5px;
-      margin-left: 40%;
+  .custom-button-back {
+    background-color:rgb(2, 254, 254);
+    border-color: #3DA9FC;
+    padding: 15px 25px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-bottom: 5px;
+    margin: 0 auto;
   }
   
   .custom-button_up {
@@ -98,5 +134,44 @@ body {
   }
   
   
+  .back-button{
+    position: absolute;
+    top: 40px; 
+    left: 10px;
+  }
   
+  @media (max-width: 500px) {
+
+    body {
+        font-size: 5px;
+    }
+
+    
+    p{
+
   
+        font-size: 15px;
+     
+      }
+    
+ 
+      .custom-button-back, .custom-button_up {
+       
+        padding: 7px 12px;
+        font-size: 10px;
+        cursor: pointer;
+        border-radius: 10px;
+        margin-bottom: 5px;
+        margin: 0 auto;
+    }
+    
+    .custom-button_up{
+
+        align-items: center;
+
+    }
+
+
+
+
+}
