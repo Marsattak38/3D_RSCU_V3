@@ -27,11 +27,12 @@
     <img class="modeling_image" src="{% static 'images/dessin-technique.png' %}" alt="icone">
   </div>
 
-    <form action="" method="post">
+    <form action="" method="post" enctype="multipart/form-data">
         {% csrf_token %}
-        <input type="file" name="file" id="file">
+        <input type="text" name="nom" id="nom">
+        <input type="file" name="fichier" id="fichier">
         <div class="submit_buttom">
-            <button class="custom-button" type="submit"><a href="https://buy.stripe.com/test_3cs15p4tT83p2C4dQS">Upload and pay</a></button>
+            <button class="custom-button" type="submit">Upload</button>
         </div>
     </form>
 
